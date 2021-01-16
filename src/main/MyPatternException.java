@@ -1,7 +1,7 @@
 package main;
 
-public class MyPatternException extends Exception{
+public class MyPatternException extends Exception {
     public MyPatternException(String description) {
-        super (description);
+        super(description);
     }
 }

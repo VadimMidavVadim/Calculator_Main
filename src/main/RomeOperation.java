@@ -1,71 +1,73 @@
 package main;
 
 public class RomeOperation extends Operation {
-    String str1 = "I";
-    String str2 = "II";
-    String str3 = "III";
-    String str4 = "IV";
-    String str5 = "V";
-    String str6 = "VI";
-    String str7 = "VII";
-    String str8 = "VIII";
-    String str9 = "IX";
-    String str10 = "X";
+    private String str1 = "I";
+    private String str2 = "II";
+    private String str3 = "III";
+    private String str4 = "IV";
+    private String str5 = "V";
+    private String str6 = "VI";
+    private String str7 = "VII";
+    private String str8 = "VIII";
+    private String str9 = "IX";
+    private String str10 = "X";
+
     public int romanToArabic1(String a) {
-        if (str1.intern()==a.intern()) {
+        if (str1.intern() == a.intern()) {
             return 1;
-        } else if (str2.intern()==a.intern()) {
-            return  2;
-        } else if (str3.intern()==a.intern()) {
+        } else if (str2.intern() == a.intern()) {
+            return 2;
+        } else if (str3.intern() == a.intern()) {
             return 3;
-        } else if (str4.intern()==a.intern()) {
+        } else if (str4.intern() == a.intern()) {
             return 4;
-        } else if (str5.intern()==a.intern()) {
+        } else if (str5.intern() == a.intern()) {
             return 5;
-        } else if (str6.intern()==a.intern()) {
+        } else if (str6.intern() == a.intern()) {
             return 6;
-        } else if (str7.intern()==a.intern()) {
+        } else if (str7.intern() == a.intern()) {
             return 7;
-        } else if (str8.intern()==a.intern()) {
+        } else if (str8.intern() == a.intern()) {
             return 8;
-        } else if (str9.intern()==a.intern()) {
+        } else if (str9.intern() == a.intern()) {
             return 9;
         } else {
             return 10;
         }
     }
+
     public int romanToArabic2(String b) {
-        if (str1.intern()==b.intern()) {
+        if (str1.intern() == b.intern()) {
             return 1;
-        } else if (str2.intern()==b.intern()) {
-            return  2;
-        } else if (str3.intern()==b.intern()) {
+        } else if (str2.intern() == b.intern()) {
+            return 2;
+        } else if (str3.intern() == b.intern()) {
             return 3;
-        } else if (str4.intern()==b.intern()) {
+        } else if (str4.intern() == b.intern()) {
             return 4;
-        } else if (str5.intern()==b.intern()) {
+        } else if (str5.intern() == b.intern()) {
             return 5;
-        } else if (str6.intern()==b.intern()) {
+        } else if (str6.intern() == b.intern()) {
             return 6;
-        } else if (str7.intern()==b.intern()) {
+        } else if (str7.intern() == b.intern()) {
             return 7;
-        } else if (str8.intern()==b.intern()) {
+        } else if (str8.intern() == b.intern()) {
             return 8;
-        } else if (str9.intern()==b.intern()) {
+        } else if (str9.intern() == b.intern()) {
             return 9;
         } else {
             return 10;
         }
     }
+
     public StringBuilder arabicToRoman(int result) {
         if (result < 1) {
             try {
                 throw new ArithmeticException("Извините, но римское число не может быть меньше или равно нулю");
             } catch (Exception e) {
                 e.printStackTrace();
+                System.err.println("Перезапустите программу и попробуйте еще раз");
             }
-        } else {
-
         }
         StringBuilder resultEnd = new StringBuilder();
         while (result >= 100) {
